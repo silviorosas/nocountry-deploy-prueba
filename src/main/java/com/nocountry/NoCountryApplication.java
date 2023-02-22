@@ -31,13 +31,13 @@ public class NoCountryApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-			try {
+			/*try {
 				Usuario usuario = new Usuario();
 				usuario.setNombre("Alex");
 				usuario.setApellido("Soto");
-				usuario.setUsername("a@gmail.com");
+				usuario.setUsername("alex@gmail.com");
 				usuario.setPassword(bCryptPasswordEncoder.encode("1234"));
-				usuario.setEmail("a@gmail.com");
+				usuario.setEmail("alex@gmail.com");
 				usuario.setTelefono("988212020");
 				//usuario.setPerfil("foto.png");
 				Rol rol = new Rol();
@@ -53,7 +53,7 @@ public class NoCountryApplication implements CommandLineRunner {
 
 			}catch (RegistroFoundException exception){
 				exception.printStackTrace();
-			}
+			}*/
 
 	}
 

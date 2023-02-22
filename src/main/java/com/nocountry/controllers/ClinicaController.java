@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/clinica/")
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost")
 public class ClinicaController {
 
     private final ClinicaService service;

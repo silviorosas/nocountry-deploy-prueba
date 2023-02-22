@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.nocountry.NoCountryApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.854 s - in com.nocountry.NoCountryApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.042 s - in com.nocountry.NoCountryApplicationTests

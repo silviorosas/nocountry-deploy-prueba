@@ -14,7 +14,7 @@ import java.util.Optional;
 //Controller que posee los end point relacionados a los medicos
 @RestController
 @RequestMapping("/medicos/")
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost")
 public class MedicoController {
 
     private  final MedicoService service;
