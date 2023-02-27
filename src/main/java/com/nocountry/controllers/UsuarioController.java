@@ -4,7 +4,7 @@ import com.nocountry.models.Rol;
 import com.nocountry.models.Usuario;
 import com.nocountry.models.UsuarioRol;
 import com.nocountry.services.UsuarioService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityNotFoundException;
@@ -20,11 +20,11 @@ public class UsuarioController {
 
 
     private final   UsuarioService usuarioService;
-    private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    public UsuarioController(UsuarioService usuarioService, BCryptPasswordEncoder bCryptPasswordEncoder) {
+
+    public UsuarioController(UsuarioService usuarioService) {
         this.usuarioService = usuarioService;
-        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+
     }
 
 
@@ -32,7 +32,7 @@ public class UsuarioController {
     @PostMapping
     public Usuario guardarUsuario(@RequestBody Usuario usuario) throws Exception{
 
-        usuario.setPassword(this.bCryptPasswordEncoder.encode(usuario.getPassword()));
+
 
         Set<UsuarioRol> usuarioRoles = new HashSet<>();
 
