@@ -14,9 +14,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.HashSet;
 import java.util.Set;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
 
-@SpringBootApplication
+@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
 public class NoCountryApplication implements CommandLineRunner {
 
 	@Autowired
@@ -34,9 +35,10 @@ public class NoCountryApplication implements CommandLineRunner {
 				Usuario usuario = new Usuario();
 				usuario.setNombre("Alex");
 				usuario.setApellido("Soto");
-				usuario.setUsername("alex@gmail.com");
-				usuario.setPassword(bCryptPasswordEncoder.encode("1234"));
-				usuario.setEmail("alex@gmail.com");
+				usuario.setUsername("a@gmail.com");
+				//usuario.setPassword(bCryptPasswordEncoder.encode("1234"));
+                                usuario.setPassword("1234");
+				usuario.setEmail("a@gmail.com");
 				usuario.setTelefono("988212020");
 				//usuario.setPerfil("foto.png");
 				Rol rol = new Rol();

@@ -12,14 +12,18 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 //Controller posee los end point para USUARIOS
 @RestController
 @RequestMapping(value="/usuarios/")
+@CrossOrigin(origins = "http://localhost")
 public class UsuarioController {
 
 
     private final   UsuarioService usuarioService;
+  
 
 
     public UsuarioController(UsuarioService usuarioService) {
@@ -32,7 +36,7 @@ public class UsuarioController {
     @PostMapping
     public Usuario guardarUsuario(@RequestBody Usuario usuario) throws Exception{
 
-
+       
 
         Set<UsuarioRol> usuarioRoles = new HashSet<>();
 

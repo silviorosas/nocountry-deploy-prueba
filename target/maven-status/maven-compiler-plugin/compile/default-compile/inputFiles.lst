@@ -4,14 +4,12 @@ C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry
 C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\repository\PacienteRepository.java
 C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\servicesImpl\PacienteServiceImpl.java
 C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\excepciones\RegistroFoundException.java
-C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\models\JwtRequest.java
 C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\servicesImpl\UsuarioServiceImpl.java
 C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\models\Medico.java
 C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\servicesImpl\ClinicaServiceImpl.java
 C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\controllers\MedicoController.java
 C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\repository\TurnoRepository.java
 C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\models\UsuarioRol.java
-C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\models\JwtResponse.java
 C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\controllers\UsuarioController.java
 C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\controllers\ClinicaController.java
 C:\Users\sodac\OneDrive\Escritorio\api-prueba-deploy\src\main\java\com\nocountry\models\Clinica.java

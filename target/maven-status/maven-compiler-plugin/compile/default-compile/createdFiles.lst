@@ -9,12 +9,10 @@ com\nocountry\services\TurnoService.class
 com\nocountry\servicesImpl\MedicoServiceImpl.class
 com\nocountry\models\Usuario.class
 com\nocountry\models\UsuarioRol.class
-com\nocountry\models\JwtResponse.class
 com\nocountry\models\Medico.class
 com\nocountry\controllers\PacienteController.class
 com\nocountry\controllers\TurnoController.class
 com\nocountry\servicesImpl\TurnoServiceImpl.class
-com\nocountry\models\JwtRequest.class
 com\nocountry\NoCountryApplication.class
 com\nocountry\repository\MedicoRepository.class
 com\nocountry\repository\TurnoRepository.class

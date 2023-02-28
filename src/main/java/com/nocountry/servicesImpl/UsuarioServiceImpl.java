@@ -11,22 +11,27 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Service
 public class UsuarioServiceImpl implements UsuarioService {
 
     private final UsuarioRepository usuarioRepository;
     private final RolRepository rolRepository;
+    private final PasswordEncoder passwordEncoder;
 
     public UsuarioServiceImpl(UsuarioRepository usuarioRepository, RolRepository repository, RolRepository rolRepository) {
         this.usuarioRepository = usuarioRepository;
-
+        this.passwordEncoder= new BCryptPasswordEncoder();
         this.rolRepository = rolRepository;
     }
 
     @Override
     public Usuario saveUsuario(Usuario usuario, Set<UsuarioRol> usuarioRols) throws Exception {
-
+        //para encriptar password debo ademas agregar spring-security y excluir desde main la misma.
+        String encoder = this.passwordEncoder.encode(usuario.getPassword());
+        usuario.setPassword(encoder);
         Usuario usuarioLocal= usuarioRepository.findByUsername(usuario.getUsername());
         if(usuarioLocal != null){
             System.out.println("El usuario ya existe");
