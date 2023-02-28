@@ -18,7 +18,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 //Controller posee los end point para USUARIOS
 @RestController
 @RequestMapping(value="/usuarios/")
-@CrossOrigin(origins = "http://localhost")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UsuarioController {
 
 

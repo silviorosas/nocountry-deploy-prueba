@@ -14,7 +14,7 @@ import java.util.Optional;
 //Controller posee los end point para turnos
 @RestController
 @RequestMapping("/turnos/")
-@CrossOrigin(origins = "http://localhost")
+@CrossOrigin(origins = "http://localhost:3000")
 public class TurnoController {
 
     private final TurnoService service;
