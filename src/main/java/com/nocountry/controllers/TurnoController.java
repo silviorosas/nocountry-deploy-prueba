@@ -14,7 +14,8 @@ import java.util.Optional;
 //Controller posee los end point para turnos
 @RestController
 @RequestMapping("/turnos/")
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://medicare-app.netlify.app")
 public class TurnoController {
 
     private final TurnoService service;
