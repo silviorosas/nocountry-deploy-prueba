@@ -14,8 +14,8 @@ import java.util.Optional;
 //Controller que posee los end point relacionados a los medicos
 @RestController
 @RequestMapping("/medicos/")
-//@CrossOrigin(origins = "http://localhost:3000")
-@CrossOrigin(origins = "https://medicare-app.netlify.app")
+@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "https://medicare-app.netlify.app")
 public class MedicoController {
 
     private  final MedicoService service;
