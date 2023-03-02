@@ -18,8 +18,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 //Controller posee los end point para USUARIOS
 @RestController
 @RequestMapping(value="/usuarios/")
-@CrossOrigin(origins = "http://localhost:3000")
-//@CrossOrigin(origins = "https://medicare-app.netlify.app")
+//@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://medicare-app.netlify.app")
 public class UsuarioController {
 
 
